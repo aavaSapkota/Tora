@@ -3,6 +3,7 @@ package com.example.android.tora;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class movementPage extends AppCompatActivity {
 
@@ -12,5 +13,8 @@ public class movementPage extends AppCompatActivity {
         setContentView(R.layout.activity_movement_page);
 
 
+    }
+
+    public void goToResource(View view) {
     }
 }

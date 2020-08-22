@@ -34,4 +34,6 @@
     <string name="username">Username</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="blm">Black Lives Matter</string>
+    <string name="movement_description" />
+    <string name="article_description" />
 </resources>
