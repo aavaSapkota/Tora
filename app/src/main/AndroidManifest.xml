@@ -9,10 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".SignUpActivity2"></activity>
-        <activity android:name=".preferencesScreen">
-
-        </activity>
+        <activity android:name=".SearchPage"></activity>
+        <activity android:name=".SignUpActivity2" />
+        <activity android:name=".preferencesScreen" />
         <activity android:name=".movementPage" />
         <activity android:name=".userPage" />
         <activity android:name=".recommendationPage" />
@@ -23,7 +22,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".MainActivity" />
 
