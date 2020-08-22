@@ -19,7 +19,9 @@
         android:textColor="@color/LogoColour"
         android:textSize="48sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="36dp" />
 
 
     <TextView
@@ -34,21 +36,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="96dp" />
 
     <TextView
         android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="88dp"
         android:fontFamily="@font/righteous"
         android:text="@string/prompt_create_account"
         android:textColor="@color/colorTextHeadlines"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
         android:id="@+id/name_header"
@@ -172,7 +177,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView8" />
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="622dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
@@ -186,7 +193,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="622dp" />
 
     <TextView
         android:id="@+id/textView8"

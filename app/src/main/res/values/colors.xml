@@ -8,6 +8,6 @@
     <color name="formcolour">#DDDDDD</color>
     <color name="Dashboard">#343333</color>
     <color name="colorTextHeadlines">#595959</color>
-
+    <color name="dashboardMovement">#FFF5EE</color>
 
 </resources>
