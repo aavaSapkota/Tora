@@ -36,7 +36,16 @@
     <string name="emailButton">Email</string>
     <string name="settings">Settings</string>
     <string name="profile">Profile</string>
-    <string name="blm">Black Lives Matter</string>
     <string name="movement_description" />
     <string name="article_description" />
+    <string name="sign_petition">Sign Petition</string>
+    <string name="petition">Petition</string>
+    <string name="read_article">Read Article</string>
+    <string name="article">Article</string>
+    <string name="petition_description" />
+    <string name="point_value" />
+    <string name="tasks">Tasks</string>
+    <string name="protest">Protest</string>
+    <string name="feminist">Feminist</string>
+    <string name="article_file" ></string>
 </resources>
