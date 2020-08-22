@@ -30,4 +30,7 @@
     <string name="view_task">View my\ntasks</string>
     <string name="to_movement_page">Go to movement\npage -></string>
     <string name="movement_name">MOVEMENT NAME</string>
+    <string name="finish_creating_naccount">Finish Creating \nAccount</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
