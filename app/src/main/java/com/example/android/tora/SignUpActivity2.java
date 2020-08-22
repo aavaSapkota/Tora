@@ -15,6 +15,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUpActivity2 extends AppCompatActivity {
 
@@ -22,7 +24,10 @@ public class SignUpActivity2 extends AppCompatActivity {
     private EditText username, password, confirmPassword;
     private FirebaseAuth mAuth;
     private static final String LOG_TAG = SignUpActivity2.class.getSimpleName();
-
+    // Write a message to the database
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference();
+    DatabaseReference userRef = myRef.child("Users");;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +44,15 @@ public class SignUpActivity2 extends AppCompatActivity {
         dOB = intent.getStringExtra("dOB");
         mAuth = FirebaseAuth.getInstance();
 
+        // Write a message to the database
+
 
 
     }
 
     public void goBackToLogIn(View view) {
-//        Intent intent = new Intent(this, loginActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, loginActivity.class);
+        startActivity(intent);
     }
 
     public void continueProcess(View view) {
@@ -66,6 +73,7 @@ public class SignUpActivity2 extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(LOG_TAG, "createUserWithEmail:success");
                                 FirebaseUser user = mAuth.getCurrentUser();
+                                userRef.child(user.getUid()).setValue(new User(dOB, usernameS));
                                 updateUI(user);
                             } else {
                                 // If sign in fails, display a message to the user.

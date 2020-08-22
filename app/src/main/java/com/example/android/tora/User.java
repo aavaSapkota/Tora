@@ -15,11 +15,10 @@ public class User {
     private int energyLevel;
     private String description;
 
-    public User (int id, int yB, String p, String uN){
-        user_id = id;
+    public User ( String yB, String uN){
         userName = uN;
-        password = p;
-        yearOfBirth = yB;
+        String [] birthday = yB.split("/");
+        yearOfBirth = Integer.parseInt(birthday[birthday.length-1]);
     }
 
     public int getUser_id(){
