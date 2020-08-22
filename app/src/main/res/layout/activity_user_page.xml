@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/AppBackground"
+    android:orientation="vertical"
     tools:context=".userPage">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Dashboard"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/righteous"
+            android:text="@string/profile"
+            android:textAllCaps="true"
+            android:textColor="@color/LogoColour"
+            android:textSize="36sp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/SettingButton"
+            android:layout_marginLeft="-49dp"
+            android:contentDescription="email"
+            android:src="@drawable/mail"
+            android:background="@color/Dashboard"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="50dp"
+            android:paddingBottom="15dp"/>
+
+        <ImageButton
+            android:background="@color/Dashboard"
+            android:id="@+id/SettingButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="goToSetting"
+            android:src="@drawable/gear"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/editAboutMe"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/righteous"
+        android:background="@color/Dashboard"
+        android:textColor="@color/LogoColour"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        android:text="Edit About Me"/>
+
+</LinearLayout>
