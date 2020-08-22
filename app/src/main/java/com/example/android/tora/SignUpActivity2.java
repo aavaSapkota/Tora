@@ -18,8 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class SignUpActivity2 extends AppCompatActivity {
 
-    private String email, name, usernameS, passwordS, confirmPasswordS;
-    private String [] dOB;
+    private String email, name, usernameS, passwordS, confirmPasswordS,dOB;
     private EditText username, password, confirmPassword;
     private FirebaseAuth mAuth;
     private static final String LOG_TAG = SignUpActivity2.class.getSimpleName();
@@ -33,24 +32,31 @@ public class SignUpActivity2 extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         confirmPassword = findViewById(R.id.confirm_password);
-        usernameS = username.getText().toString();
-        passwordS = password.getText().toString();
-        confirmPasswordS = confirmPassword.getText().toString();
 
         Intent intent = getIntent();
         email = intent.getStringExtra("email");
         name = intent.getStringExtra("name");
-        dOB = intent.getStringArrayExtra("dOB");
+        dOB = intent.getStringExtra("dOB");
         mAuth = FirebaseAuth.getInstance();
+
+
 
     }
 
     public void goBackToLogIn(View view) {
-        Intent intent = new Intent(this, loginActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, loginActivity.class);
+//        startActivity(intent);
     }
 
     public void continueProcess(View view) {
+        Log.d(LOG_TAG, "email: "+email);
+        Log.d(LOG_TAG, "password: "+passwordS);
+        Log.d(LOG_TAG, "SO the method runs...");
+
+        usernameS = username.getText().toString();
+        passwordS = password.getText().toString();
+        confirmPasswordS = confirmPassword.getText().toString();
+
         if(confirmPasswordS.equals(passwordS)){
             mAuth.createUserWithEmailAndPassword(email, passwordS)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -73,7 +79,7 @@ public class SignUpActivity2 extends AppCompatActivity {
                         }
                     });
         }else{
-            Toast.makeText(SignUpActivity2.this, " The Passwords Entered do not match. Try Again.",
+            Toast.makeText(SignUpActivity2.this, "Passwords must match",
                     Toast.LENGTH_SHORT).show();
         }
 
@@ -84,6 +90,7 @@ public class SignUpActivity2 extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user) {
         if(user!=null){
+            Log.d(LOG_TAG, "SO.... IT SHOULD HAVE MOVED ON");
             Intent intent = new Intent(this, preferencesScreen.class);
             startActivity(intent);
         }

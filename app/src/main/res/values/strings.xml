@@ -27,6 +27,5 @@
     <string name="password">Password</string>
     <string name="finish_creating_naccount">Finish Creating \nAccount</string>
     <string name="username">Username</string>
-    <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
 </resources>
