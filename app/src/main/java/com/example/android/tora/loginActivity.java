@@ -30,6 +30,16 @@ public class loginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mEmail = findViewById(R.id.emailInput);
         mPassword = findViewById(R.id.passwordInput);
+
+//        // Restore the state.
+//        if (savedInstanceState != null) {
+//            boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+//            if (isVisible) {
+//                mEmail.setVisibility(View.VISIBLE);
+//                mReplyTextView.setText(savedInstanceState.getString("reply_text"));
+//                mReplyTextView.setVisibility(View.VISIBLE);
+//            }
+//        }
     }
 
 
@@ -38,8 +48,11 @@ public class loginActivity extends AppCompatActivity {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        if(currentUser!=null){
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+
     }
 
     public void signUp(View view) {
@@ -80,4 +93,17 @@ public class loginActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+//    @Override
+//    public void onSaveInstanceState(Bundle outState) {
+//        super.onSaveInstanceState(outState);
+//
+//        if (mEmail.getVisibility() == View.VISIBLE&&mPassword.getVisibility() == View.VISIBLE) {
+//            outState.putBoolean("reply_visible", true);
+//            outState.putString("email",mEmail.getText().toString());
+//            outState.putString("password",mPassword.getText().toString());
+//        }
+//    }
+
+
 }

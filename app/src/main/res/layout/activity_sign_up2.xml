@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/AppBackground"
-    tools:context=".SignUpActivity">
+    tools:context=".SignUpActivity2">
 
     <TextView
         android:id="@+id/title"
@@ -30,53 +30,54 @@
         tools:layout_editor_absoluteX="81dp"
         tools:layout_editor_absoluteY="80dp" />
 
+
     <TextView
-        android:id="@+id/header"
+        android:id="@+id/header2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous"
-        android:text="@string/prompt_create_account"
+        android:text="@string/finish_creating_naccount"
+        android:textAlignment="center"
         android:textColor="@color/colorTextHeadlines"
         android:textSize="36sp"
         tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="145dp" />
-
+        tools:layout_editor_absoluteY="121dp" />
 
     <TextView
-        android:id="@+id/name_header"
+        android:id="@+id/username_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous"
-        android:text="@string/name"
+        android:text="@string/username"
         android:textColor="@color/LogoColour"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="211dp" />
 
     <TextView
-        android:id="@+id/birthdate_header"
+        android:id="@+id/password_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous"
-        android:text="@string/date_of_birth"
+        android:text="@string/password"
         android:textColor="@color/LogoColour"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="306dp" />
 
     <TextView
-        android:id="@+id/email_header"
+        android:id="@+id/confirm_password_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous"
-        android:text="@string/prompt_email"
+        android:text="@string/confirm_password"
         android:textColor="@color/LogoColour"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="415dp" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/confirm_password"
         android:layout_width="297dp"
         android:layout_height="32dp"
         android:background="@drawable/rounded"
@@ -86,7 +87,7 @@
         tools:layout_editor_absoluteY="455dp" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/username"
         android:layout_width="297dp"
         android:layout_height="36dp"
         android:background="@drawable/rounded"
@@ -102,9 +103,9 @@
         android:background="@drawable/rounded_bottom_buttons"
         android:fontFamily="@font/righteous"
         android:text="@string/continue_button"
-        android:onClick="continueProcess"
         android:textColor="@color/LogoColour"
         android:textSize="24sp"
+        android:onClick="continueProcess"
         tools:layout_editor_absoluteX="129dp"
         tools:layout_editor_absoluteY="551dp" />
 
@@ -122,7 +123,7 @@
         tools:layout_editor_absoluteY="652dp" />
 
     <EditText
-        android:id="@+id/dOB"
+        android:id="@+id/password"
         android:layout_width="299dp"
         android:layout_height="33dp"
         android:background="@drawable/rounded"
@@ -159,6 +160,4 @@
         android:text="@string/or_line"
         tools:layout_editor_absoluteX="195dp"
         tools:layout_editor_absoluteY="613dp" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
