@@ -8,8 +8,8 @@
     tools:context=".movementPage">
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="427dp"
+        android:layout_height="631dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +21,9 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/LogoColour">
 
                 <TextView
                     android:id="@+id/movementName"
@@ -35,10 +36,9 @@
                     android:textColor="@color/Dashboard"
                     android:textSize="45sp"
 
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -96,83 +96,37 @@
                     app:layout_constraintEnd_toEndOf="@+id/backgroundLayout_Description"
                     app:layout_constraintStart_toStartOf="@+id/myMovementLayout_Description"
                     app:layout_constraintTop_toTopOf="@+id/backgroundLayout_Description"
-                    tools:srcCompat="@drawable/MovementImage" />
+                    tools:srcCompat="@drawable/movement_image" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
-
-
-                <View
-                    android:id="@+id/backgroundLayout_Heading"
-                    android:layout_width="354dp"
-                    android:layout_height="189dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="50dp"
-                    android:background="@drawable/rounded_background"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <View
-                    android:id="@+id/myMovementLayout_Heading"
-                    android:layout_width="354dp"
-                    android:layout_height="172dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded_my_movements"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
 
                 <Button
-                    android:id="@+id/button2"
-                    android:layout_width="100dp"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="24dp"
-                    android:background="@drawable/rounded"
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Add to Dashboard"
                     android:fontFamily="@font/righteous"
-                    android:onClick="goToResource"
-                    android:text="Read Article"
-                    android:textAllCaps="false"
-                    android:textColor="@color/Dashboard"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.819" />
+                    android:onClick="AddMovement"/>
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="174dp"
-                    android:layout_height="63dp"
-                    android:layout_marginTop="28dp"
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tasks"
                     android:fontFamily="@font/righteous"
-                    android:text="Article"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/black"
-                    android:textSize="44sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.263"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:background="@color/LogoColour"
+                    android:onClick="goToTasks"/>
+            </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="297dp"
-                    android:layout_height="37dp"
-                    android:text="@string/article_description"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.597"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/backgroundLayout_Heading" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
@@ -200,29 +154,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-<!--        <ImageButton-->
-<!--            android:id="@+id/emailButton"-->
-<!--            android:layout_width="44dp"-->
-<!--            android:layout_height="32dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginEnd="60dp"-->
-<!--            android:background="@color/Dashboard"-->
-<!--            android:scaleType="centerCrop"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:srcCompat="@drawable/ic_email" />-->
+        <ImageButton
+            android:id="@+id/emailButton"
+            android:layout_width="44dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="60dp"
+            android:background="@color/Dashboard"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_email"
+            tools:ignore="VectorDrawableCompat" />
 
-<!--        <ImageButton-->
-<!--            android:id="@+id/settingsButton"-->
-<!--            android:layout_width="33dp"-->
-<!--            android:layout_height="32dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginEnd="16dp"-->
-<!--            android:background="@color/Dashboard"-->
-<!--            android:scaleType="centerCrop"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:srcCompat="@drawable/ic_settings" />-->
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/Dashboard"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_settings"
+            tools:ignore="VectorDrawableCompat" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
