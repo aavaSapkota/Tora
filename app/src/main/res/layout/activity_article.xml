@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/AppBackground"
-    tools:context=".movementPage">
+    tools:context=".ArticleActivity">
 
     <ScrollView
         android:layout_width="427dp"
@@ -44,89 +44,18 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
+                android:background="@color/AppBackground">
 
-
-                <View
-                    android:id="@+id/backgroundLayout_Description"
-                    android:layout_width="354dp"
-                    android:layout_height="389dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginRight="50dp"
-                    android:background="@drawable/rounded_background"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <View
-                    android:id="@+id/myMovementLayout_Description"
-                    android:layout_width="354dp"
-                    android:layout_height="372dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/rounded_my_movements"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-                <TextView
-                    android:id="@+id/description"
-                    android:layout_width="260dp"
-                    android:layout_height="74dp"
-                    android:text="@string/movement_description"
+                <WebView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.529"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView"
-                    app:layout_constraintVertical_bias="0.296" />
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="263dp"
-                    android:layout_height="208dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    app:layout_constraintEnd_toEndOf="@+id/backgroundLayout_Description"
-                    app:layout_constraintStart_toStartOf="@+id/myMovementLayout_Description"
-                    app:layout_constraintTop_toTopOf="@+id/backgroundLayout_Description"
-                    tools:srcCompat="@drawable/movement_image" />
-
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp">
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Add to Dashboard"
-                    android:fontFamily="@font/righteous"
-                    android:onClick="AddMovement"/>
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Tasks"
-                    android:fontFamily="@font/righteous"
-                    android:background="@color/LogoColour"
-                    android:onClick="goToTasks"/>
-            </LinearLayout>
-
 
         </LinearLayout>
     </ScrollView>
