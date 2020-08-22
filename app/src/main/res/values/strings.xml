@@ -33,6 +33,7 @@
     <string name="finish_creating_naccount">Finish Creating \nAccount</string>
     <string name="username">Username</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="profile">Profile</string>
     <string name="blm">Black Lives Matter</string>
     <string name="movement_description" />
     <string name="article_description" />
