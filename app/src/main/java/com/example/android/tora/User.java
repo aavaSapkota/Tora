@@ -1,5 +1,6 @@
 package com.example.android.tora;
 
+import com.google.android.gms.common.util.Strings;
 import com.google.android.gms.tasks.Task;
 
 import java.util.List;
@@ -11,6 +12,7 @@ public class User {
     private int yearOfBirth;
     private List<Movement> movementsJoined;
     private List<Tasks> tasksList;
+    private List<String> preferences;
 
     private int energyLevel;
     private String description;

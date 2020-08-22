@@ -92,20 +92,21 @@ public class loginActivity extends AppCompatActivity {
         if(user!=null){
             Intent intent = new Intent(this, MainActivity.class);
             intent.putExtra("logged-on", 1);
+            intent.putExtra("userId", mAuth.getUid());
             startActivity(intent);
         }
     }
 
-//    @Override
-//    public void onSaveInstanceState(Bundle outState) {
-//        super.onSaveInstanceState(outState);
-//
-//        if (mEmail.getVisibility() == View.VISIBLE&&mPassword.getVisibility() == View.VISIBLE) {
-//            outState.putBoolean("reply_visible", true);
-//            outState.putString("email",mEmail.getText().toString());
-//            outState.putString("password",mPassword.getText().toString());
-//        }
-//    }
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        if (mEmail.getVisibility() == View.VISIBLE&&mPassword.getVisibility() == View.VISIBLE) {
+            outState.putBoolean("reply_visible", true);
+            outState.putString("email",mEmail.getText().toString());
+            outState.putString("password",mPassword.getText().toString());
+        }
+    }
 
 
 }
