@@ -3,8 +3,17 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+<<<<<<< Updated upstream
     <color name="LogoColour">#FCBA11</color>
     <color name="AppBackground">#F5F5F5</color>
     <color name="formcolour">#DDDDDD</color>
     <color name="Dashboard">#343333</color>
+=======
+    <color name="colorLogoSlogan">#FCBA11</color>
+    <color name="colorTextHeadlines">#595959</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorForm">#DDDDDD</color>
+    <color name="colorDashboard">#343333</color>
+
+>>>>>>> Stashed changes
 </resources>
