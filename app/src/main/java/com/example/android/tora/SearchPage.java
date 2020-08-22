@@ -3,18 +3,12 @@ package com.example.android.tora;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 
-public class movementPage extends AppCompatActivity {
+public class SearchPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_movement_page);
-
-
-    }
-
-    public void goToResource(View view) {
+        setContentView(R.layout.activity_search_page);
     }
 }

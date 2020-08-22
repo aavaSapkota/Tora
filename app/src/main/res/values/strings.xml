@@ -35,4 +35,8 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="emailButton">Email</string>
     <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="blm">Black Lives Matter</string>
+    <string name="movement_description" />
+    <string name="article_description" />
 </resources>
