@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "226876898066",
+    "firebase_url": "https://tora-68eeb.firebaseio.com",
+    "project_id": "tora-68eeb",
+    "storage_bucket": "tora-68eeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226876898066:android:1b4f83548b15c3a565d1cb",
+        "android_client_info": {
+          "package_name": "com.example.android.tora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226876898066-qtivl3rp825ocrdq5q7ut1qp4jpga3dm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.tora",
+            "certificate_hash": "af87b2a6c367d0b4cd27f93a64dd6e66f686ec30"
+          }
+        },
+        {
+          "client_id": "226876898066-get8geus0fgpdgf1o2gpoguhicgpg6o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeqnXa-NY1zfBO7k0I7d-gVwJ2goIUyNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226876898066-get8geus0fgpdgf1o2gpoguhicgpg6o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
