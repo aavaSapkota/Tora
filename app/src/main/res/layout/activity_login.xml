@@ -115,7 +115,7 @@
             android:layout_marginBottom="24dp"
             android:background="@color/formcolour"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
@@ -125,9 +125,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Forgot Password?"
+            android:text="@string/forgot_password"
             android:textColor="@color/Dashboard"
-            android:textSize="14dp" />
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/Loginbutton"
@@ -137,9 +137,10 @@
             android:layout_gravity="center"
             android:background="@color/Dashboard"
             android:fontFamily="@font/righteous"
-            android:text="SIGN IN"
+            android:text="@string/sign_in"
             android:textColor="@color/LogoColour"
-            android:textSize="24dp"
+            android:textSize="24sp"
+            android:onClick="logIn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -190,6 +191,7 @@
             android:text="@string/create_account"
             android:textColor="@color/LogoColour"
             android:textSize="18sp"
+            android:onClick="signUp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.500"

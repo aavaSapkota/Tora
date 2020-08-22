@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous"
         android:text="@string/app_name"
-        android:textColor="@color/colorLogoSlogan"
+        android:textColor="@color/LogoColour"
         android:textSize="48sp"
         tools:layout_editor_absoluteX="52dp"
         tools:layout_editor_absoluteY="20dp" />
@@ -27,7 +27,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/righteous"
         android:text="@string/slogan"
-        android:textColor="@color/colorLogoSlogan"
+        android:textColor="@color/LogoColour"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous"
         android:text="@string/name"
-        android:textColor="@color/colorLogoSlogan"
+        android:textColor="@color/LogoColour"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="211dp" />
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous"
         android:text="@string/date_of_birth"
-        android:textColor="@color/colorLogoSlogan"
+        android:textColor="@color/LogoColour"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="306dp" />
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous"
         android:text="@string/prompt_email"
-        android:textColor="@color/colorLogoSlogan"
+        android:textColor="@color/LogoColour"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="415dp" />
@@ -104,7 +104,7 @@
         android:background="@drawable/rounded_bottom_buttons"
         android:fontFamily="@font/righteous"
         android:text="@string/continue_button"
-        android:textColor="@color/colorLogoSlogan"
+        android:textColor="@color/LogoColour"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="129dp"
         tools:layout_editor_absoluteY="551dp" />
@@ -116,7 +116,7 @@
         android:background="@drawable/rounded_bottom_buttons"
         android:fontFamily="@font/righteous"
         android:text="@string/have_an_account"
-        android:textColor="@color/colorLogoSlogan"
+        android:textColor="@color/LogoColour"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="129dp"
         tools:layout_editor_absoluteY="652dp" />
