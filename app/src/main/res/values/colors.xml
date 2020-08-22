@@ -8,7 +8,9 @@
     <color name="formcolour">#DDDDDD</color>
     <color name="Dashboard">#343333</color>
     <color name="colorTextHeadlines">#595959</color>
-    <color name="dashboardMovement">#FFF5EE</color>
+    <color name="dashboardMovement">#E7E1E1</color>
+    <color name="dashboardMovementBottomLayer">#C4C4C4</color>
     <color name="black">#000</color>
+    <color name="yellowBackground">#FCE097</color>
 
 </resources>
