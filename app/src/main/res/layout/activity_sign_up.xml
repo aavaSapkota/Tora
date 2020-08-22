@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="@color/AppBackground"
     tools:context=".SignUpActivity">
 
     <TextView
@@ -16,14 +16,14 @@
         android:textColor="@color/LogoColour"
         android:textSize="48sp"
         tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="20dp" />
+        tools:layout_editor_absoluteY="36dp" />
 
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/righteous"
         android:text="@string/slogan"
@@ -32,17 +32,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="72dp"
         android:fontFamily="@font/righteous"
         android:text="@string/prompt_create_account"
         android:textColor="@color/colorTextHeadlines"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="145dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
@@ -138,7 +140,7 @@
         android:background="@color/colorTextHeadlines"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteX="231dp"
         tools:layout_editor_absoluteY="622dp" />
 
     <EditText
@@ -148,8 +150,8 @@
         android:background="@color/colorTextHeadlines"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="621dp" />
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="622dp" />
 
     <TextView
         android:id="@+id/textView8"
