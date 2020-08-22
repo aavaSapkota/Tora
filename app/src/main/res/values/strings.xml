@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Tora</string>
+    <string name="app_name">TORA</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_email">Email:</string>
+    <string name="prompt_password">Password:</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">SIGN IN</string>
     <string name="welcome">"Welcome !"</string>
@@ -15,4 +15,22 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_main_dashboard">MainActivity</string>
     <string name="create_account">CREATE ACCOUNT</string>
+    <string name="slogan">Less Talk,\nMore Action.</string>
+    <string name="prompt_create_account">Create Account</string>
+    <string name="name">Name:</string>
+    <string name="date_of_birth">Date of Birth:</string>
+    <string name="continue_button">CONTINUE</string>
+    <string name="have_an_account">I HAVE AN\nACCOUNT</string>
+    <string name="or_line">OR</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="my_movement">My Movements</string>
+    <string name="view_task">View my\ntasks</string>
+    <string name="to_movement_page">Go to movement\npage -></string>
+    <string name="movement_name">MOVEMENT NAME</string>
+    <string name="finish_creating_naccount">Finish Creating \nAccount</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>

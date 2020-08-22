@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".preferencesScreen"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="48sp"
-        android:text="Welcome!"
-        android:fontFamily="@font/righteous"
-        android:gravity="center"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Select the topics that interests you so we can get you started."
-        android:fontFamily="@font/righteous"
-        android:gravity="left"/>
 
+    android:orientation="vertical"
+    tools:context=".preferencesScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/righteous"
+        android:gravity="center"
+        android:text="Welcome!"
+        android:textSize="48sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/righteous"
+        android:gravity="left"
+        android:text="Select the topics that interests you so we can get you started." />
 </LinearLayout>
