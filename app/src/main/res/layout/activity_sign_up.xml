@@ -15,8 +15,8 @@
         android:text="@string/app_name"
         android:textColor="@color/colorLogoSlogan"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="47dp" />
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="20dp" />
 
 
     <TextView
@@ -43,6 +43,7 @@
         tools:layout_editor_absoluteX="81dp"
         tools:layout_editor_absoluteY="145dp" />
 
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -51,9 +52,8 @@
         android:text="@string/name"
         android:textColor="@color/colorLogoSlogan"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="173dp" />
-
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="211dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -63,8 +63,8 @@
         android:text="@string/date_of_birth"
         android:textColor="@color/colorLogoSlogan"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="265dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="306dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -74,8 +74,8 @@
         android:text="@string/prompt_email"
         android:textColor="@color/colorLogoSlogan"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="353dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="415dp" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -85,17 +85,17 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="401dp" />
+        tools:layout_editor_absoluteY="455dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
-        android:layout_width="214dp"
-        android:layout_height="25dp"
+        android:layout_width="297dp"
+        android:layout_height="36dp"
         android:background="@drawable/rounded"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="207dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="254dp" />
 
     <Button
         android:id="@+id/buttonContinue"
@@ -123,13 +123,13 @@
 
     <EditText
         android:id="@+id/editTextDate2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="299dp"
+        android:layout_height="33dp"
+        android:background="@drawable/rounded"
         android:ems="10"
         android:inputType="date"
-        android:background="@drawable/rounded"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="303dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="353dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
