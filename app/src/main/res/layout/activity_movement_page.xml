@@ -21,15 +21,40 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/righteous"
+                    android:text="@string/blm"
+                    android:textColor="@color/Dashboard"
+                    android:textSize="40sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="382dp"
                 android:layout_height="518dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp">
 
+
+
                 <View
                     android:id="@+id/backgroundLayout_Heading"
                     android:layout_width="354dp"
-                    android:layout_height="469dp"
+                    android:layout_height="489dp"
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginRight="50dp"
@@ -51,6 +76,18 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="263dp"
+                    android:layout_height="208dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/backgroundLayout_Heading"
+                    app:layout_constraintStart_toStartOf="@+id/myMovementLayout_Heading"
+                    app:layout_constraintTop_toTopOf="@+id/backgroundLayout_Heading"
+                    tools:srcCompat="@tools:sample/avatars" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
