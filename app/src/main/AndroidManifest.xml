@@ -16,6 +16,7 @@
         <activity android:name=".recommendationPage" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".loginActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
