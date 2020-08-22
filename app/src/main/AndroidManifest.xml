@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".SignUpActivity2"></activity>
+        <activity android:name=".SignUpActivity2"/>
         <activity android:name=".preferencesScreen" />
         <activity android:name=".movementPage" />
         <activity android:name=".userPage" />
@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+
 
         <meta-data
             android:name="preloaded_fonts"

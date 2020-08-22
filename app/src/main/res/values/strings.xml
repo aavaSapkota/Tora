@@ -33,4 +33,6 @@
     <string name="finish_creating_naccount">Finish Creating \nAccount</string>
     <string name="username">Username</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="emailButton">Email</string>
+    <string name="settings">Settings</string>
 </resources>
