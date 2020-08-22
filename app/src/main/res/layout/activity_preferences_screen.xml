@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@color/AppBackground"
     android:orientation="vertical"
     tools:context=".preferencesScreen">
 
@@ -14,6 +14,7 @@
         android:fontFamily="@font/righteous"
         android:gravity="center"
         android:text="Welcome!"
+        android:textColor="@color/Dashboard"
         android:textSize="48sp" />
 
     <TextView
@@ -21,5 +22,27 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous"
         android:gravity="left"
+        android:textSize="24sp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/Dashboard"
         android:text="Select the topics that interests you so we can get you started." />
+    <GridView
+        android:id="@+id/preferenceSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/IamDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm Done"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="@color/Dashboard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673"/>
+
 </LinearLayout>
