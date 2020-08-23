@@ -9,17 +9,96 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/yellowBackground"
+        android:layout_width="408dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/yellowBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="414dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="648dp"
+        android:background="@drawable/rounded_bottom_buttons"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/toolbarTitleDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/righteous"
+            android:textColor="@color/LogoColour"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
         android:id="@+id/myMovementText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="92dp"
         android:fontFamily="@font/righteous"
         android:text="@string/my_movement"
         android:textColor="@color/colorTextHeadlines"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/backgroundLayout"
+        android:layout_width="354dp"
+        android:layout_height="469dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <View
+        android:id="@+id/myMovementLayout"
+        android:layout_width="354dp"
+        android:layout_height="472dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/rounded_my_movements"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <TextView
+        android:id="@+id/movementNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/righteous"
+        android:text="@string/movement_name"
+        android:textColor="@color/Dashboard"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellowBackground" />
+
+    <Button
+        android:id="@+id/toMovementPageButton"
+        android:layout_width="138dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/righteous"
+        android:text="@string/to_movement_page"
+        android:textAllCaps="false"
+        android:textColor="@color/Dashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myMovementLayout" />
 
     <Button
         android:id="@+id/viewTaskButton"
@@ -35,105 +114,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <View
-        android:id="@+id/backgroundLayout"
-        android:layout_width="354dp"
-        android:layout_height="469dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="84dp"
-        android:background="@drawable/rounded_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topLayout" />
-
-    <View
-        android:id="@+id/myMovementLayout"
-        android:layout_width="354dp"
-        android:layout_height="472dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="72dp"
-        android:background="@drawable/rounded_my_movements"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topLayout" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/topLayout"
-        android:layout_width="411dp"
-        android:layout_height="76dp"
-        android:layout_marginBottom="656dp"
-        android:background="@color/Dashboard"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp">
-
-    <TextView
-        android:id="@+id/dashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/righteous"
-        android:text="@string/dashboard"
-        android:textColor="@color/LogoColour"
-        android:textSize="32sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/emailButton"
-        android:layout_width="44dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="60dp"
-        android:background="@color/Dashboard"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_email" />
-
-    <ImageButton
-        android:id="@+id/settingsButton"
-        android:layout_width="33dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/Dashboard"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_settings" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/toMovementPageButton"
-        android:layout_width="138dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="380dp"
-        android:layout_marginEnd="56dp"
-        android:background="@drawable/rounded"
-        android:fontFamily="@font/righteous"
-        android:text="@string/to_movement_page"
-        android:textAllCaps="false"
-        android:textColor="@color/Dashboard"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/myMovementLayout" />
-
-    <TextView
-        android:id="@+id/movementNameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/righteous"
-        android:text="@string/movement_name"
-        android:textColor="@color/Dashboard"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="170dp" />
-
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/movementImage"
         android:layout_width="293dp"
         android:layout_height="291dp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="220dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

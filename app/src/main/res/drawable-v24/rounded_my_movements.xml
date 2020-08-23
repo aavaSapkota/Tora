@@ -3,6 +3,6 @@
     android:shape="rectangle">
     <corners android:radius="24dp" />  // set radius of corner
     <stroke android:width="2dp" android:color="@color/dashboardMovement" /> // set color and width of border
-    <solid android:color="@color/dashboardMovement" /> // inner bgcolor
+    <solid android:color="@color/dashboardMovement"" /> // inner bgcolor
 
 </shape>

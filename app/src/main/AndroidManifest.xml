@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".SearchPage"></activity>
+
+        <activity android:name=".ArticleActivity"></activity>
+        <activity android:name=".MovementTasks" />
+        <activity android:name=".SearchPage" />
         <activity android:name=".SignUpActivity2" />
         <activity android:name=".preferencesScreen" />
         <activity android:name=".movementPage"/>
@@ -26,6 +29,7 @@
 
         </activity>
         <activity android:name=".MainActivity" />
+
 
         <meta-data
             android:name="preloaded_fonts"

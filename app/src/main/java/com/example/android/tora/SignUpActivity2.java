@@ -46,8 +46,6 @@ public class SignUpActivity2 extends AppCompatActivity {
 
         // Write a message to the database
 
-
-
     }
 
     public void goBackToLogIn(View view) {
