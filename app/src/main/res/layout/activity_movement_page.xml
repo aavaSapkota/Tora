@@ -127,13 +127,8 @@
                     android:onClick="goToTasks"/>
             </LinearLayout>
 
-<<<<<<< HEAD
         </LinearLayout>
-        <![CDATA[
-=======
->>>>>>> master
 
-        </LinearLayout>
     </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -169,13 +164,9 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ic_email"
             app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-            app:layout_constraintTop_toTopOf="parent" />
-=======
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_email"
             tools:ignore="VectorDrawableCompat" />
->>>>>>> master
 
         <ImageButton
             android:id="@+id/settingsButton"
@@ -187,13 +178,9 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ic_settings"
             app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-            app:layout_constraintTop_toTopOf="parent" />
-=======
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_settings"
             tools:ignore="VectorDrawableCompat" />
->>>>>>> master
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

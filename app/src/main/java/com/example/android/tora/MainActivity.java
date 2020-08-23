@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
         getSupportActionBar().setTitle("DASHBOARD");
 
+
         if(savedInstanceState!=null){
 
             LOGGED_ON = savedInstanceState.getInt("logged-on");
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate( R.menu.menu, menu );
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -93,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
 
         }
+    }
+
     @Override
     public void onStart() {
         super.onStart();

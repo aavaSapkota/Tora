@@ -27,7 +27,7 @@ public class SignUpActivity2 extends AppCompatActivity {
     // Write a message to the database
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference();
-    DatabaseReference userRef = myRef.child("Users");;
+    DatabaseReference userRef = myRef.child("Users");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
