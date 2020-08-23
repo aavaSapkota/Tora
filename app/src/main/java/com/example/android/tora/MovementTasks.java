@@ -24,7 +24,7 @@ public class MovementTasks extends AppCompatActivity {
         articleDescription = (TextView) findViewById(R.id.article_description);
         petitionDescription = (TextView) findViewById(R.id.petition_description);
 
-        mArticle.setText(Movement.getTask());
+//        mArticle.setText(Movement.getTask());
     }
 
     public void findLocation(View view) {

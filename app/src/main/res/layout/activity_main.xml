@@ -99,6 +99,7 @@
         android:text="@string/to_movement_page"
         android:textAllCaps="false"
         android:textColor="@color/Dashboard"
+        android:onClick="goToMovement"
         app:layout_constraintBottom_toBottomOf="@+id/myMovementLayout"
         app:layout_constraintEnd_toEndOf="@+id/myMovementLayout"
         app:layout_constraintStart_toStartOf="@+id/myMovementLayout"

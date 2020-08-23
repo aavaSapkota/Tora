@@ -32,7 +32,7 @@ public class preferencesScreen extends AppCompatActivity {
         titles.add("Inclusive Design");
         titles.add("Health Care");
 
-        //images.add(R.drawable.Environmentalism_Icon.png);
+        //images.add(R.drawable.environmentalism_icon.png);
 
 
 
