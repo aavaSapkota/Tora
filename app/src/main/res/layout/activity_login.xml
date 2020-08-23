@@ -93,7 +93,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.787" />
+            app:layout_constraintVertical_bias="0.787"
+            android:textColor="@color/Dashboard"/>
 
         <TextView
             android:layout_width="wrap_content"
