@@ -15,16 +15,18 @@
         <activity android:name=".SearchPage" />
         <activity android:name=".SignUpActivity2" />
         <activity android:name=".preferencesScreen" />
-        <activity android:name=".movementPage" />
-        <activity android:name=".userPage" />
-        <activity android:name=".recommendationPage" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".loginActivity">
+        <activity android:name=".movementPage"/>
+        <activity android:name=".userPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".recommendationPage" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".loginActivity">
+
         </activity>
         <activity android:name=".MainActivity" />
 
