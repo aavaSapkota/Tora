@@ -97,7 +97,7 @@
                     app:layout_constraintEnd_toEndOf="@+id/backgroundLayout_Description"
                     app:layout_constraintStart_toStartOf="@+id/myMovementLayout_Description"
                     app:layout_constraintTop_toTopOf="@+id/backgroundLayout_Description"
-                    tools:srcCompat="@drawable/movement_image" />
+                    android:src="@drawable/movement_image" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
