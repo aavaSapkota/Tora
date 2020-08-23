@@ -139,7 +139,8 @@
         app:layout_constraintStart_toStartOf="@+id/myMovementLayout"
         app:layout_constraintTop_toTopOf="@+id/backgroundLayout"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_unsuscribe" />
+        app:srcCompat="@drawable/ic_unsuscribe"
+        tools:ignore="VectorDrawableCompat" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

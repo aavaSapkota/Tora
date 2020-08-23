@@ -17,7 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".ArticleActivity" />
-        <activity android:name=".MovementTasks" />
+        <activity android:name=".MovementTasks"
+            android:label = "@string/view_task"
+            android:parentActivityName=".movementPage"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value= "com.example.android.tora.movementPage" />
         <activity android:name=".SearchPage" />
         <activity android:name=".SignUpActivity2" />
         <activity android:name=".preferencesScreen" />

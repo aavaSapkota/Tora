@@ -9,14 +9,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MovementTasks extends AppCompatActivity {
 
     private TextView mArticle, articleDescription, mPetition, petitionDescription, mProtest, protestDescription;
-    FirebaseAuth mAuth = FirebaseAuth.getInstance();
-    FirebaseUser user = mAuth.getCurrentUser();
+    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +29,11 @@ public class MovementTasks extends AppCompatActivity {
         mProtest = (TextView) findViewById(R.id.protest);
         protestDescription = (TextView) findViewById(R.id.protest_description);
 
-        mArticle.setText(Movement.getTask(user,0).getType());
-        mPetition.setText(Movement.getTask(user,2).getType());
-        articleDescription.setText(Movement.getTask(user,0).getDescription());
-        petitionDescription.setText(Movement.getTask(user,2).getDescription());
-        mProtest.setText(Movement.getTask(user, 1).getType());
-        protestDescription.setText(Movement.getTask(user, 1).getDescription());
+        mArticle.setText(Movement.getTask(0).getType());
+        mPetition.setText(Movement.getTask(1).getType());
+        articleDescription.setText(Movement.getTask(0).getDescription());
+        petitionDescription.setText(Movement.getTask(1).getDescription());
+        mProtest.setText(Movement.getTask(0).getType());
 
     }
 

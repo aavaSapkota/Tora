@@ -17,7 +17,7 @@ public class Movement {
     private String name;
     private String description;
     private ImageView image;
-    private static HashMap<FirebaseUser, ArrayList<Tasks> >users = new HashMap<FirebaseUser, ArrayList<Tasks>>();;
+    private static ArrayList<Tasks> tasks = new  ArrayList<Tasks>();;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference();
     DatabaseReference movementRef = myRef.child("Movements");
@@ -34,18 +34,14 @@ public class Movement {
 
     }
 
-    public static void newUser(FirebaseUser user){
-        if(!users.containsKey(user)){
-            ArrayList<Tasks> tasks = new ArrayList<Tasks>();
+    public static void newUser(){
             tasks.add(new Tasks("Article", "FIX DESCRIPTION", false, 10));
             tasks.add(new Tasks("Protest", "FIX DESCRIPTION", false, 50));
             tasks.add(new Tasks("Petition", "FIX DESCRIPTION", false, 10));
-            users.put(user, tasks);
-        }
     }
 
-    public static Tasks getTask(FirebaseUser u, int t){
-        return users.get(u).get(t);
+    public static Tasks getTask(int t){
+        return tasks.get(t);
     }
 
     public void setName(String name){
