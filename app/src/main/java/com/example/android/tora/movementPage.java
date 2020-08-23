@@ -29,7 +29,7 @@ public class movementPage extends AppCompatActivity {
     private DatabaseReference myRef = database.getReference();
     DatabaseReference movementRef = myRef.child("Movements");
     private static final String LOG_TAG = movementPage.class.getSimpleName();
-
+    public User person;
 
 
 
@@ -37,6 +37,7 @@ public class movementPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movement_page);
+
 
         mName = (TextView) findViewById(R.id.movementName);
         mDescription = (TextView) findViewById(R.id.description);

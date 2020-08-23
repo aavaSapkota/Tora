@@ -9,9 +9,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseUser;
+
 public class MovementTasks extends AppCompatActivity {
 
     private TextView mArticle, articleDescription, mPetition, petitionDescription;
+    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +27,9 @@ public class MovementTasks extends AppCompatActivity {
         articleDescription = (TextView) findViewById(R.id.article_description);
         petitionDescription = (TextView) findViewById(R.id.petition_description);
 
-//        mArticle.setText(Movement.getTask());
+        mArticle.setText(Movement.getTask(user,0).getType());
+        mPetition.setText(Movement.getTask(user,0).getType());
+        mArticle.setText(Movement.getTask(user,0).getDescription());
     }
 
     public void findLocation(View view) {

@@ -44,7 +44,7 @@ public class Movement {
         }
     }
 
-    public static Tasks getTask(User u, int t){
+    public static Tasks getTask(FirebaseUser u, int t){
         return users.get(u).get(t);
     }
 
