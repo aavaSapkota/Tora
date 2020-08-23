@@ -100,12 +100,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        if(LOGGED_ON==0){
-            LOGGED_ON=1;
-            Log.d(LOG_TAG, "ON START: "+LOGGED_ON);
+//        if(LOGGED_ON==0){
+//            LOGGED_ON=1;
+//            Log.d(LOG_TAG, "ON START: "+LOGGED_ON);
 //            Intent intent = new Intent(this, loginActivity.class);
 //            startActivity(intent);
-        }
+//        }
+
+        Intent intent = new Intent(this, movementPage.class);
+        startActivity(intent);
 
     }
 

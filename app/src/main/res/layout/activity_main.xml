@@ -13,7 +13,7 @@
         android:id="@+id/yellowBackground"
         android:layout_width="408dp"
         android:layout_height="74dp"
-        android:layout_marginStart="0dpdp"
+        android:layout_marginStart="0dp"
         android:background="@color/yellowBackground"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
@@ -155,7 +155,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/myMovementLayout"
         app:layout_constraintTop_toTopOf="@+id/myMovementLayout"
-        app:srcCompat="@drawable/ic_unsuscribe" />
+        app:srcCompat="@drawable/ic_unsuscribe"
+         />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
