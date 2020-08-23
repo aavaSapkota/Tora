@@ -104,7 +104,7 @@
         app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="@+id/myMovementLayout"
         app:layout_constraintTop_toTopOf="@+id/myMovementLayout"
-        app:layout_constraintVertical_bias="0.873" />
+        app:layout_constraintVertical_bias="0.861" />
 
     <Button
         android:id="@+id/viewTaskButton"
@@ -140,7 +140,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.015" />
 
     <ImageButton
         android:id="@+id/unsuscribeButton"
@@ -175,21 +175,11 @@
         app:menu="@menu/menu_navigation" />
 
     <ImageView
-        android:id="@+id/movementImage"
-        android:layout_width="293dp"
-        android:layout_height="291dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="136dp"
-        android:contentDescription="@string/movement_description"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundLayout"
-        app:layout_constraintEnd_toEndOf="@+id/myMovementLayout"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/backgroundLayout"
-        app:layout_constraintTop_toTopOf="@+id/myMovementLayout"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@drawable/movement_image" />
+        android:id="@+id/imageView2"
+        android:layout_width="354dp"
+        android:layout_height="304dp"
+        app:srcCompat="@drawable/movement_image"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="213dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
