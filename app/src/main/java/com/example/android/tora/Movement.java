@@ -17,7 +17,7 @@ public class Movement {
     private String name;
     private String description;
     private ImageView image;
-    private static HashMap<User, ArrayList<Tasks> >users = new HashMap<User, ArrayList<Tasks>>();;
+    private static HashMap<FirebaseUser, ArrayList<Tasks> >users = new HashMap<FirebaseUser, ArrayList<Tasks>>();;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference();
     DatabaseReference movementRef = myRef.child("Movements");
@@ -34,7 +34,7 @@ public class Movement {
 
     }
 
-    public static void newUser(User user){
+    public static void newUser(FirebaseUser user){
         if(!users.containsKey(user)){
             ArrayList<Tasks> tasks = new ArrayList<Tasks>();
             tasks.add(new Tasks("Article", "FIX DESCRIPTION", false, 10));

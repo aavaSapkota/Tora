@@ -18,9 +18,6 @@ public class Tasks {
         energy_point_value = ev;
     }
 
-
-
-
     public boolean isCompleted() {
         return completed;
     }

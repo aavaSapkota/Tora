@@ -9,12 +9,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MovementTasks extends AppCompatActivity {
 
-    private TextView mArticle, articleDescription, mPetition, petitionDescription;
-    FirebaseUser user;
+    private TextView mArticle, articleDescription, mPetition, petitionDescription, mProtest, protestDescription;
+    FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    FirebaseUser user = mAuth.getCurrentUser();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +28,16 @@ public class MovementTasks extends AppCompatActivity {
         mPetition = (TextView) findViewById(R.id.petition);
         articleDescription = (TextView) findViewById(R.id.article_description);
         petitionDescription = (TextView) findViewById(R.id.petition_description);
+        mProtest = (TextView) findViewById(R.id.protest);
+        protestDescription = (TextView) findViewById(R.id.protest_description);
 
         mArticle.setText(Movement.getTask(user,0).getType());
-        mPetition.setText(Movement.getTask(user,0).getType());
-        mArticle.setText(Movement.getTask(user,0).getDescription());
+        mPetition.setText(Movement.getTask(user,2).getType());
+        articleDescription.setText(Movement.getTask(user,0).getDescription());
+        petitionDescription.setText(Movement.getTask(user,2).getDescription());
+        mProtest.setText(Movement.getTask(user, 1).getType());
+        protestDescription.setText(Movement.getTask(user, 1).getDescription());
+
     }
 
     public void findLocation(View view) {
