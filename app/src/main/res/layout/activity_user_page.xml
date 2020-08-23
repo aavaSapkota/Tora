@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,6 +9,7 @@
     tools:context=".userPage">
 
     <RelativeLayout
+        android:id="@+id/headerUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/Dashboard"
@@ -26,38 +27,103 @@
             android:textSize="36sp" />
 
         <ImageButton
+            android:id="@+id/mail"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignLeft="@+id/SettingButton"
             android:layout_marginLeft="-49dp"
-            android:contentDescription="email"
-            android:src="@drawable/mail"
-            android:background="@color/Dashboard"
-            android:scaleType="fitCenter"
             android:layout_marginRight="50dp"
-            android:paddingBottom="15dp"/>
+            android:background="@color/Dashboard"
+            android:contentDescription="email"
+            android:paddingBottom="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mail" />
 
         <ImageButton
-            android:background="@color/Dashboard"
             android:id="@+id/SettingButton"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/Dashboard"
             android:contentDescription="goToSetting"
-            android:src="@drawable/gear"
             android:scaleType="fitCenter"
-            android:layout_marginRight="10dp"/>
+            android:src="@drawable/gear" />
     </RelativeLayout>
+
     <Button
         android:id="@+id/editAboutMe"
-        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/righteous"
-        android:background="@color/Dashboard"
-        android:textColor="@color/LogoColour"
-        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/headerUser"
+        android:layout_alignParentRight="true"
         android:layout_gravity="right"
-        android:text="Edit About Me"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="-59dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/righteous"
+        android:text="Edit About Me"
+        android:textColor="@color/LogoColour"
+        android:textSize="14dp" />
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="340dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/avatar"
+                app:civ_border_color="#3f51b5"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10dp"
+                app:civ_shadow_color="#3f51b5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Avatar"
+                android:textSize="8sp"
+                android:textColor="@color/Dashboard"
+                android:gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/placeholder1"/>
+        </LinearLayout>
+        <TextView
+            android:fontFamily="@font/righteous"
+            android:layout_marginLeft="15dp"
+            android:background="@color/LogoColour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Name"
+            android:textSize="24dp"
+            android:textColor="@color/Dashboard"
+            android:textAlignment="gravity"/>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground = "@color/LogoColour"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
