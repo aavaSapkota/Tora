@@ -19,15 +19,15 @@
         <activity android:name=".userPage" />
         <activity android:name=".recommendationPage" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".loginActivity">
+        <activity android:name=".loginActivity"/>
+
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-
 
         <meta-data
             android:name="preloaded_fonts"

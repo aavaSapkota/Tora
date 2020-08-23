@@ -4,14 +4,14 @@
     <!-- "Mark Favorite", should appear as action button if possible -->
     <item
         android:id="@+id/emailButton"
-        android:icon="@drawable/ic_baseline_email_24"
+        android:icon="@drawable/ic_email"
         android:title="@string/emailButton"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/settingsButton"
         android:title="@string/settings"
-        android:icon="@drawable/ic_baseline_settings_24"
+        android:icon="@drawable/ic_settings"
         app:showAsAction="always"/>
 
 </menu>
