@@ -138,7 +138,7 @@
                 android:textAlignment="gravity"
                 android:textColor="@color/Dashboard" />
 
-            <EditText
+            <TextView
                 android:id="@+id/aboutMe"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
