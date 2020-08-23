@@ -28,7 +28,7 @@
         android:layout_width="400dp"
         android:layout_height="58dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/rounded_bottom_buttons"
+        android:background="@drawable/rounded_dashboard"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +88,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/my_toolbar"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintVertical_bias="0.625" />
 
     <Button
         android:id="@+id/toMovementPageButton"
@@ -101,28 +101,9 @@
         android:textColor="@color/Dashboard"
         app:layout_constraintBottom_toBottomOf="@+id/myMovementLayout"
         app:layout_constraintEnd_toEndOf="@+id/myMovementLayout"
-        app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="@+id/myMovementLayout"
         app:layout_constraintTop_toTopOf="@+id/myMovementLayout"
-        app:layout_constraintVertical_bias="0.861" />
-
-    <Button
-        android:id="@+id/viewTaskButton"
-        android:layout_width="103dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginBottom="148dp"
-        android:background="@drawable/rounded"
-        android:fontFamily="@font/righteous"
-        android:text="@string/view_task"
-        android:textAllCaps="false"
-        android:textColor="@color/Dashboard"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/myMovementLayout"
-        app:layout_constraintTop_toTopOf="@+id/myMovementLayout"
-        app:layout_constraintVertical_bias="0.997" />
+        app:layout_constraintVertical_bias="0.909" />
 
     <TextView
         android:id="@+id/movementName"
@@ -140,7 +121,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <ImageButton
         android:id="@+id/unsuscribeButton"
@@ -155,7 +136,8 @@
         app:layout_constraintEnd_toEndOf="@+id/myMovementLayout"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/myMovementLayout"
-        app:layout_constraintTop_toTopOf="@+id/myMovementLayout"
+        app:layout_constraintTop_toTopOf="@+id/backgroundLayout"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_unsuscribe" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -180,6 +162,6 @@
         android:layout_height="304dp"
         app:srcCompat="@drawable/movement_image"
         tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="213dp" />
+        tools:layout_editor_absoluteY="239dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

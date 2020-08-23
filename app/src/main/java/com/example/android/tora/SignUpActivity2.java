@@ -18,6 +18,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
+
 public class SignUpActivity2 extends AppCompatActivity {
 
     private String email, name, usernameS, passwordS, confirmPasswordS,dOB;
@@ -71,7 +73,7 @@ public class SignUpActivity2 extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(LOG_TAG, "createUserWithEmail:success");
                                 FirebaseUser user = mAuth.getCurrentUser();
-                                userRef.child(user.getUid()).setValue(new User(dOB, usernameS));
+                                userRef.child(user.getUid()).setValue(new User(user, dOB, usernameS));
                                 updateUI(user);
                             } else {
                                 // If sign in fails, display a message to the user.
@@ -97,7 +99,7 @@ public class SignUpActivity2 extends AppCompatActivity {
     private void updateUI(FirebaseUser user) {
         if(user!=null){
             Log.d(LOG_TAG, "SO.... IT SHOULD HAVE MOVED ON");
-            Intent intent = new Intent(this, preferencesScreen.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
     }
