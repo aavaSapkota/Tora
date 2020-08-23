@@ -70,10 +70,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="65dp"
-        android:layout_marginBottom="340dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginBottom="240dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -122,7 +122,7 @@
                 android:background="@color/LogoColour"
                 android:fontFamily="@font/righteous"
                 android:paddingLeft="15dp"
-                android:text="Name"
+                android:text="Jane Doe"
                 android:textAlignment="gravity"
                 android:textColor="@color/Dashboard"
                 android:textSize="24sp" />
@@ -134,20 +134,22 @@
                 android:background="@color/LogoColour"
                 android:fontFamily="@font/righteous"
                 android:paddingLeft="15dp"
-                android:text="Username"
+                android:text="janedoe124"
                 android:textAlignment="gravity"
                 android:textColor="@color/Dashboard" />
 
-            <EditText
+            <TextView
                 android:id="@+id/aboutMe"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="152dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@color/formcolour"
                 android:fontFamily="@font/righteous"
                 android:paddingLeft="15dp"
-                android:text="About me"
+                android:text="About me: Passionate and curious to learn: 'Less talk, More action'. "
                 android:textColor="@color/Dashboard"
                 android:layout_marginBottom="10dp"/>
         </LinearLayout>

@@ -76,9 +76,10 @@
 
                 <TextView
                     android:id="@+id/description"
-                    android:layout_width="260dp"
-                    android:layout_height="74dp"
+                    android:layout_width="253dp"
+                    android:layout_height="95dp"
                     android:text="@string/movement_description"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.529"
@@ -96,7 +97,7 @@
                     app:layout_constraintEnd_toEndOf="@+id/backgroundLayout_Description"
                     app:layout_constraintStart_toStartOf="@+id/myMovementLayout_Description"
                     app:layout_constraintTop_toTopOf="@+id/backgroundLayout_Description"
-                    tools:srcCompat="@drawable/movement_image" />
+                    android:src="@drawable/movement_image" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

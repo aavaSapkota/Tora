@@ -24,32 +24,32 @@ public class SearchPage extends AppCompatActivity {
         setSupportActionBar(myToolbar);
         getSupportActionBar().setTitle("SEARCH");
 
-        //          BOTTOM NAVIGATION PANEL
-        //Intialize And Assign Variable
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-
-        //Set Home Selected
-        bottomNavigationView.setSelectedItemId(R.id.profileNav);
-
-        //Perform ItemSelectedListener
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch(menuItem.getItemId()){
-                    case R.id.dashboardNav:
-                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.searchNav:
-                        return true;
-                    case R.id.profileNav:
-                        startActivity(new Intent(getApplicationContext(),userPage.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                }
-                return false;
-            }
-        }); // END OF BOTTOM NAVIGATION CODE
+//        //          BOTTOM NAVIGATION PANEL
+//        //Intialize And Assign Variable
+//        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+//
+//        //Set Home Selected
+//        bottomNavigationView.setSelectedItemId(R.id.profileNav);
+//
+//        //Perform ItemSelectedListener
+//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+//                switch(menuItem.getItemId()){
+//                    case R.id.dashboardNav:
+//                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+//                    case R.id.searchNav:
+//                        return true;
+//                    case R.id.profileNav:
+//                        startActivity(new Intent(getApplicationContext(),userPage.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+//                }
+//                return false;
+//            }
+//        }); // END OF BOTTOM NAVIGATION CODE
     }
 
     @Override
