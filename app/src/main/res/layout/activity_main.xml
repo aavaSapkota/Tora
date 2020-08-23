@@ -12,20 +12,21 @@
         android:id="@+id/yellowBackground"
         android:layout_width="408dp"
         android:layout_height="74dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="56dp"
         android:background="@color/yellowBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
-        android:layout_width="414dp"
-        android:layout_height="89dp"
-        android:layout_marginBottom="648dp"
+        android:layout_width="400dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="680dp"
         android:background="@drawable/rounded_bottom_buttons"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        tools:layout_editor_absoluteX="-5dp">
 
         <TextView
             android:id="@+id/toolbarTitleDashboard"
@@ -41,12 +42,14 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+
+
     <TextView
         android:id="@+id/myMovementText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="76dp"
         android:fontFamily="@font/righteous"
         android:text="@string/my_movement"
         android:textColor="@color/colorTextHeadlines"
@@ -54,37 +57,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <View
         android:id="@+id/backgroundLayout"
         android:layout_width="354dp"
         android:layout_height="469dp"
         android:layout_marginStart="16dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/rounded_background"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="180dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/myMovementLayout"
         android:layout_width="354dp"
         android:layout_height="472dp"
         android:layout_marginStart="28dp"
+        android:layout_marginBottom="96dp"
         android:background="@drawable/rounded_my_movements"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="157dp" />
-
-    <TextView
-        android:id="@+id/movementNameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/righteous"
-        android:text="@string/movement_name"
-        android:textColor="@color/Dashboard"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yellowBackground" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/toMovementPageButton"
@@ -105,7 +96,7 @@
         android:layout_width="103dp"
         android:layout_height="54dp"
         android:layout_marginStart="56dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="140dp"
         android:background="@drawable/rounded"
         android:fontFamily="@font/righteous"
         android:text="@string/view_task"
@@ -120,8 +111,45 @@
         android:layout_height="291dp"
         android:layout_marginStart="56dp"
         android:layout_marginBottom="220dp"
+        android:contentDescription="@string/movement_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/movementName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="176dp"
+        android:fontFamily="@font/righteous"
+        android:text="@string/movement_name"
+        android:textColor="@color/Dashboard"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/unsuscribeButton"
+        android:layout_width="37dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/yellowBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_unsuscribe" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/LogoColour"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
