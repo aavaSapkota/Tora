@@ -18,6 +18,7 @@
         android:paddingBottom="12dp">
 
         <TextView
+            android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/righteous"
@@ -70,16 +71,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="65dp"
         android:layout_marginBottom="340dp"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="25dp">
+            android:layout_marginStart="25dp"
+            android:orientation="vertical">
 
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:layout_width="100dp"
@@ -88,42 +89,78 @@
                 app:civ_border_color="#3f51b5"
                 app:civ_border_width="4dp"
                 app:civ_shadow="true"
-                app:civ_shadow_radius="10dp"
-                app:civ_shadow_color="#3f51b5"/>
+                app:civ_shadow_color="#3f51b5"
+                app:civ_shadow_radius="1dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="Change Avatar"
-                android:textSize="8sp"
                 android:textColor="@color/Dashboard"
-                android:gravity="center_horizontal"/>
+                android:textSize="8sp" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="88dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/placeholder1"/>
+                android:src="@drawable/placeholder1" />
         </LinearLayout>
-        <TextView
-            android:fontFamily="@font/righteous"
-            android:layout_marginLeft="15dp"
-            android:background="@color/LogoColour"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Name"
-            android:textSize="24dp"
-            android:textColor="@color/Dashboard"
-            android:textAlignment="gravity"/>
+            android:layout_marginLeft="15dp"
+            android:background="@color/LogoColour"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userpageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Name"
+                android:background="@color/LogoColour"
+                android:fontFamily="@font/righteous"
+                android:paddingLeft="15dp"
+                android:text="Name"
+                android:textAlignment="gravity"
+                android:textColor="@color/Dashboard"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/usernamePage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/LogoColour"
+                android:fontFamily="@font/righteous"
+                android:paddingLeft="15dp"
+                android:text="Username"
+                android:textAlignment="gravity"
+                android:textColor="@color/Dashboard" />
+
+            <EditText
+                android:id="@+id/aboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/formcolour"
+                android:fontFamily="@font/righteous"
+                android:paddingLeft="15dp"
+                android:text="About me"
+                android:textColor="@color/Dashboard"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bottom_navigation"
-        app:itemBackground = "@color/LogoColour"
-        app:itemTextColor="@drawable/selector"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/LogoColour"
         app:itemIconTint="@drawable/selector"
-        app:menu="@menu/menu_navigation"
-        android:layout_alignParentBottom="true"/>
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
 </RelativeLayout>
