@@ -2,14 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/dashboardNav"
-        android:title="Dashboard"
-        android:icon="@drawable/dashboard"/>
-    <item
-        android:id="@+id/searchNav"
-        android:title="Search"
-        android:icon="@drawable/search"/>
+        android:icon="@drawable/dashboard"
+        android:title="Dashboard" />
+
     <item
         android:id="@+id/profileNav"
-        android:title="Profile"
-        android:icon="@drawable/profile"/>
+        android:icon="@drawable/profile"
+        android:title="Profile" />
 </menu>

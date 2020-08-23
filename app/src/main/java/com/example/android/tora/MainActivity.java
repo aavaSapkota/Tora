@@ -3,6 +3,7 @@ package com.example.android.tora;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -45,16 +46,12 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch(menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.dashboardNav:
                         return true;
-                    case R.id.searchNav:
-                        startActivity(new Intent(getApplicationContext(),SearchPage.class));
-                        overridePendingTransition(0,0);
-                        return true;
                     case R.id.profileNav:
-                        startActivity(new Intent(getApplicationContext(),userPage.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), userPage.class));
+                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;
@@ -68,13 +65,13 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("DASHBOARD");
 
 
-        if(savedInstanceState!=null){
+        if (savedInstanceState != null) {
 
             LOGGED_ON = savedInstanceState.getInt("logged-on");
-            Log.d(LOG_TAG, "loggedOn: "+LOGGED_ON);
+            Log.d(LOG_TAG, "loggedOn: " + LOGGED_ON);
         }
 
-        Log.d(LOG_TAG, "loggedOn------------------------------------------------------: "+LOGGED_ON);
+        Log.d(LOG_TAG, "loggedOn------------------------------------------------------: " + LOGGED_ON);
 
 
         myRef.addValueEventListener(new ValueEventListener() {
@@ -96,8 +93,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu ) {
-        getMenuInflater().inflate( R.menu.menu, menu );
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
 
@@ -139,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Log.d(LOG_TAG, "ON SAVED INSTANCE: "+LOGGED_ON);
+        Log.d(LOG_TAG, "ON SAVED INSTANCE: " + LOGGED_ON);
         outState.putInt("logged-on", LOGGED_ON);
     }
 
