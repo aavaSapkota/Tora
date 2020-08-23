@@ -47,12 +47,12 @@ public class loginActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser!=null){
-            Log.d(LOG_TAG, "User has logged in: "+currentUser);
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-        }
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        if(currentUser!=null){
+//            Log.d(LOG_TAG, "User has logged in: "+currentUser);
+//            Intent intent = new Intent(this, MainActivity.class);
+//            startActivity(intent);
+//        }
 
     }
 
