@@ -14,7 +14,7 @@
         android:id="@+id/yellowBackground"
         android:layout_width="408dp"
         android:layout_height="74dp"
-        android:layout_marginStart="0dpdp"
+        android:layout_marginStart="0dp"
         android:background="@color/yellowBackground"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
