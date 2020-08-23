@@ -10,19 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".splashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ArticleActivity" />
-        <activity android:name=".MovementTasks"
-            android:label = "@string/view_task"
-            android:parentActivityName=".movementPage"/>
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value= "com.example.android.tora.movementPage" />
+        <activity android:name=".MovementTasks"/>
         <activity android:name=".SearchPage" />
         <activity android:name=".SignUpActivity2" />
         <activity android:name=".preferencesScreen" />
@@ -31,7 +22,13 @@
         <activity android:name=".recommendationPage" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".loginActivity" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -33,7 +33,7 @@ public class MovementTasks extends AppCompatActivity {
         mPetition.setText(Movement.getTask(1).getType());
         articleDescription.setText(Movement.getTask(0).getDescription());
         petitionDescription.setText(Movement.getTask(1).getDescription());
-        mProtest.setText(Movement.getTask(0).getType());
+        mProtest.setText(Movement.getTask(2).getType());
 
     }
 

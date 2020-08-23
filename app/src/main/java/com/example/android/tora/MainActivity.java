@@ -128,8 +128,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-        Intent intent = new Intent(this, movementPage.class);
-        startActivity(intent);
 
     }
 

@@ -23,21 +23,29 @@ public class Movement {
     DatabaseReference movementRef = myRef.child("Movements");
 
 
+
     public Movement(int _id, String n, String d){
         movementRef.child("id").setValue(_id);
         movementRef.child("id").child("name").setValue(n);
         movementRef.child("id").child("description").setValue(d);
 
+        tasks.add(new Tasks("Article", "FIX DESCRIPTION", false, 10));
+        tasks.add(new Tasks("Protest", "FIX DESCRIPTION", false, 50));
+        tasks.add(new Tasks("Petition", "FIX DESCRIPTION", false, 10));
+
+
+
     }
 
     public Movement(){
 
+        tasks.add(new Tasks("Article", "FIX DESCRIPTION", false, 10));
+        tasks.add(new Tasks("Protest", "FIX DESCRIPTION", false, 50));
+        tasks.add(new Tasks("Petition", "FIX DESCRIPTION", false, 10));
     }
 
     public static void newUser(){
-            tasks.add(new Tasks("Article", "FIX DESCRIPTION", false, 10));
-            tasks.add(new Tasks("Protest", "FIX DESCRIPTION", false, 50));
-            tasks.add(new Tasks("Petition", "FIX DESCRIPTION", false, 10));
+
     }
 
     public static Tasks getTask(int t){
