@@ -29,9 +29,9 @@ public class Movement {
         movementRef.child("id").child("name").setValue(n);
         movementRef.child("id").child("description").setValue(d);
 
-        tasks.add(new Tasks("Article", "FIX DESCRIPTION", false, 10));
-        tasks.add(new Tasks("Protest", "FIX DESCRIPTION", false, 50));
-        tasks.add(new Tasks("Petition", "FIX DESCRIPTION", false, 10));
+        tasks.add(new Tasks("Article", "Climate change, a beginner's guide!", false, 10));
+        tasks.add(new Tasks("Protest", "Join the font lines! Come with us on XX/XX/XXXX as we fight for earth.", false, 50));
+        tasks.add(new Tasks("Petition", "Show your support, sign the petition", false, 10));
 
 
 
@@ -39,9 +39,9 @@ public class Movement {
 
     public Movement(){
 
-        tasks.add(new Tasks("Article", "FIX DESCRIPTION", false, 10));
-        tasks.add(new Tasks("Protest", "FIX DESCRIPTION", false, 50));
-        tasks.add(new Tasks("Petition", "FIX DESCRIPTION", false, 10));
+        tasks.add(new Tasks("Article", "Climate change, a beginner's guide!", false, 10));
+        tasks.add(new Tasks("Protest", "Join the font lines! Come with us on XX/XX/XXXX as we fight for earth.", false, 50));
+        tasks.add(new Tasks("Petition",  "Show your support, sign the petition", false, 10));
     }
 
     public static void newUser(){

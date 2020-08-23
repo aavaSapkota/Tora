@@ -30,10 +30,11 @@ public class MovementTasks extends AppCompatActivity {
         protestDescription = (TextView) findViewById(R.id.protest_description);
 
         mArticle.setText(Movement.getTask(0).getType());
-        mPetition.setText(Movement.getTask(1).getType());
+        mPetition.setText(Movement.getTask(2).getType());
         articleDescription.setText(Movement.getTask(0).getDescription());
-        petitionDescription.setText(Movement.getTask(1).getDescription());
-        mProtest.setText(Movement.getTask(2).getType());
+        petitionDescription.setText(Movement.getTask(2).getDescription());
+        mProtest.setText(Movement.getTask(1).getType());
+        protestDescription.setText(Movement.getTask(1).getDescription());
 
     }
 
