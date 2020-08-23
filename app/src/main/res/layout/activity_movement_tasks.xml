@@ -169,7 +169,7 @@
                     android:background="@drawable/rounded"
                     android:fontFamily="@font/righteous"
                     android:onClick="saveTheDate"
-                    android:text="Mark as going"
+                    android:text="@string/mark_as_going"
                     android:textAllCaps="false"
                     android:textColor="@color/Dashboard"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -338,9 +338,7 @@
             android:background="@color/Dashboard"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_email"
-            tools:ignore="VectorDrawableCompat" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageButton
             android:id="@+id/settingsButton"
@@ -351,9 +349,7 @@
             android:background="@color/Dashboard"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_settings"
-            tools:ignore="VectorDrawableCompat" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
