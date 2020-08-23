@@ -1,5 +1,7 @@
 package com.example.android.tora;
 
+import android.widget.ImageView;
+
 import com.google.android.gms.common.util.Strings;
 import com.google.android.gms.tasks.Task;
 
@@ -7,12 +9,12 @@ import java.util.List;
 
 public class User {
     private int user_id;
+    private ImageView profilePicture;
     private String userName;
     private String password;
     private int yearOfBirth;
     private List<Movement> movementsJoined;
     private List<Tasks> tasksList;
-    private List<String> preferences;
 
     private int energyLevel;
     private String description;
@@ -60,21 +62,6 @@ public class User {
     }
 
 
-    /*
-    * This Method needs to make a copy of the Task objects found on the
-    * Movements page and copy it to the user's Tasks List*/
-    public void getTaskList(List<Tasks> tL){
-//
-//        class TaskCopy implements Cloneable
-//        {
-//
-//            public Tasks clone() throws
-//                    CloneNotSupportedException
-//            {
-//                return super.clone();
-//            }
-//        }
-    }
 
 
 }
