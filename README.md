@@ -1,12 +1,6 @@
 
-# Project Title
-
-One Paragraph of project description goes here, example: Neural Style Transfer, Van Gogh Crazy World
-Descriptions:
-* Background, example: Learning what is neural style transfer 
-* Motivation, example: We would like to pay tribute to MR. Van Gogh, who is the ...
-* Experience, example: A full package of build neural style transfer training on Linux and Android inference applications (and Windows link in another repository)
-
+# Tora
+An android app that gives guidence to people who want to make real impact in movements
 
 ## Getting Started
 
